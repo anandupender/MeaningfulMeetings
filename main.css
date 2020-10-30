@@ -1,0 +1,23 @@
+body{
+    background-color: blue;
+    color: blanchedalmond;
+    padding:60px;
+    font-family: 'Coustard', serif;
+    font-family: 'IBM Plex Mono', monospace;
+
+}
+
+#typed-strings{
+    display: none;
+}
+
+#typed{
+    font-size: 56px;
+    font-weight: 400;
+}
+
+#attribution{
+    font-size: 10px;
+    position: fixed;
+    bottom:20px;
+}
