@@ -1,5 +1,5 @@
 var typed;
-var questions = ["Ask Alan how the internet works.", "Ask Renae how to write a proper headline.", "Ask Tessa what the conference team is up to.", "Ask Anand about this site."];
+var questions = ["Ask Alan how the internet works.", "Ask Renae how to write a proper headline.", "Ask Tessa what the conference team is up to.", "Ask Yael about her classes on social justice", "Ask Alan about his most recent Damn Interesting episode"];
 
 function checkTime(){
     let date = new Date();  
