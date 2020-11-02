@@ -1,5 +1,5 @@
 var typed;
-var questions = ["Ask Alan how the internet works.", "Ask Renae how to write a proper headline.", "Ask Tessa what the conference team is up to.", "Ask Yael about her classes on social justice", "Ask Alan about his most recent Damn Interesting episode"];
+var questions = ["Ask Alan how the internet works.", "Ask Renae how to write a proper headline.", "Ask Tessa about the most interesting TED event she's helped create.", "Ask Yael about her classes on social justice", "Ask Alan about his most recent Damn Interesting episode", "Ask Connie about her PhD thesis."];
 
 function checkTime(){
     let date = new Date();  
@@ -7,6 +7,18 @@ function checkTime(){
         hour: "2-digit", minute: "2-digit"
     }; 
     document.querySelector("#time").innerHTML = date.toLocaleTimeString("en-us", options2);
+
+    var hour = date.getHours();
+    if(hour < 11){
+        document.querySelector("#greeting").innerHTML = "Morning";
+    }
+    else if(hour < 15){
+        document.querySelector("#greeting").innerHTML = "Good afternoon";
+    }
+    else{
+        document.querySelector("#greeting").innerHTML = "Good night";
+    }
+
 }
 
 function startKeyboard(){
@@ -19,12 +31,14 @@ function startKeyboard(){
 
                 var randomNum = Math.floor(Math.random() * questions.length)
                 typed.destroy();
-                string = 'Learning^400, good choice! </br><em>' + questions[randomNum]+'</em>';
+                string = '^1500Learning^400, good choice! </br>^750<em>' + questions[randomNum]+"</em> <br/>^750Press <strong>'q'</strong> to see another quesetion.";
                 typed = new Typed('#typed', {
                     strings: [string],
                     typeSpeed: 30,
                     showCursor:false
                 });
+
+                document.getElementById("main").style.backgroundColor = "rgb(158 52 255)";
                 break;
 
             // show a cool gif

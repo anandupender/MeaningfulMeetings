@@ -1,10 +1,19 @@
 body{
-    background-color: blue;
-    color: blanchedalmond;
-    padding:60px;
+    background-color: #f8f8f8;
+    margin:0;
+    padding:30px;
     font-family: 'Coustard', serif;
     font-family: 'IBM Plex Mono', monospace;
+}
 
+#main{
+    background-color: blue;
+    transition: background-color 1500ms ease;
+    color: blanchedalmond;
+    height: calc(100vh - 60px - 80px);
+    padding:40px;
+    border-radius: 14px;
+    box-shadow: inset 0 0 15px #000000AA;
 }
 
 #typed-strings{
@@ -12,14 +21,14 @@ body{
 }
 
 #typed{
-    font-size: 56px;
+    font-size: 50px;
     font-weight: 400;
 }
 
 #attribution{
     font-size: 10px;
     position: fixed;
-    bottom:20px;
+    bottom:50px;
 }
 
 a, a:visited{
