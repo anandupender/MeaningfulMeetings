@@ -33,7 +33,7 @@ function startKeyboard(){
                 typed.destroy();
                 string = '^1500Learning^400, good choice! </br>^750<em>' + questions[randomNum]+"</em> <br/>^750Press <strong>[q]</strong> to see another question.";
                 typed = new Typed('#typed', {
-                    strings: ["^1000Learning^400, good choice! </br>^750<em>Ask the UX team about creating design systems.</em><br/>^750Press <strong>[q]</strong> to see another question."],
+                    strings: [string],
                     typeSpeed: 30,
                     showCursor:false
                 });
